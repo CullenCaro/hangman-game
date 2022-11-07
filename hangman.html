@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>HANGMAN!!!</title>
+</head>
+
+<body>
+<script>
+var words = ["logan", "frankie", "fortnite", "amongus", "bazinga"];
+var word = words[Math.floor(Math.random() * words.length)];
+
+//The following is the empty answer array
+var answerArray = [];
+
+//Create and fill the answer array
+for (var i = 0; i < word.length; i++) {
+	answerArray[i] = "_";
+}
+
+var remainingLetters = word.length;
+
+//Coding the game loop
+while(remainingLetters > 0) {
+		//Show player their progress
+		alert(answerArray.join(""))
+		//Take input from player
+		//Update answerArray and remainingLetters for every correct guess
+}
+
+</script>
+</body>
+
+</html>
