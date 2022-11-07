@@ -22,8 +22,17 @@ var remainingLetters = word.length;
 //Coding the game loop
 while(remainingLetters > 0) {
 		//Show player their progress
-		alert(answerArray.join(""))
+		alert(answerArray.join(" "));
 		//Take input from player
+		var guess = prompt("Guess a letter, or click cancel to stop");
+		if (guess === null) {
+			break;
+		} else if (guess.length !== 1) {
+			alert("Please enter a single letter");
+		} else {
+			//Update the game state with the guess
+		}
+
 		//Update answerArray and remainingLetters for every correct guess
 }
 
